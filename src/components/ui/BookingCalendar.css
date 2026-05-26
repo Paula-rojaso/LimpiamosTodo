@@ -1,0 +1,114 @@
+.booking-section {
+  width: 100%;
+  padding: 100px 20px;
+  background: #050506;
+  color: #ffffff;
+}
+
+.booking-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.booking-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.booking-label {
+  display: block;
+  margin-bottom: 14px;
+  color: #d6aa18;
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.booking-header h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+  font-weight: 950;
+  line-height: 1.15;
+}
+
+.booking-header h2 strong {
+  color: #d6aa18;
+}
+
+.booking-header p {
+  max-width: 720px;
+  margin: 20px auto 0;
+  color: #b9b9c3;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.booking-card {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 42px;
+  border-radius: 20px;
+  background: #09090b;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+.booking-google-card h3 {
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-size: 1.55rem;
+  font-weight: 900;
+}
+
+.booking-google-card p {
+  max-width: 560px;
+  margin: 0 auto 30px;
+  color: #b9b9c3;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.booking-submit {
+  min-height: 52px;
+  padding: 0 32px;
+  border: none;
+  border-radius: 6px;
+  background: #d6aa18;
+  color: #080808;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.booking-submit:hover {
+  background: #efc229;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(214, 170, 24, 0.22);
+}
+
+.booking-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .booking-section {
+    padding: 70px 16px;
+  }
+
+  .booking-card {
+    padding: 32px 22px;
+  }
+
+  .booking-link {
+    width: 100%;
+  }
+}

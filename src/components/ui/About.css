@@ -1,0 +1,78 @@
+/* ===== ABOUT / NOSOTROS ===== */
+
+.about-section {
+  width: 100%;
+  padding: 100px 20px;
+  background: #050506;
+  color: #ffffff;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-image-wrapper {
+  width: 100%;
+  height: 460px;
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.8);
+}
+
+.about-content {
+  max-width: 650px;
+}
+
+.about-content h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 950;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.about-content h2 span {
+  color: #d6aa18;
+}
+
+.about-content p {
+  margin: 24px 0 0;
+  color: #b9b9c3;
+  font-size: 1.12rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    padding: 70px 18px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .about-image-wrapper {
+    height: 340px;
+  }
+
+  .about-content {
+    max-width: 100%;
+    text-align: center;
+  }
+}
