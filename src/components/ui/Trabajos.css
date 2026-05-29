@@ -6,10 +6,6 @@
   overflow: hidden;
 }
 
-.trabajos-overlay {
-  width: 100%;
-}
-
 .trabajos-container {
   max-width: 1150px;
   margin: 0 auto;
@@ -19,80 +15,180 @@
 .trabajos-subtitle {
   display: inline-block;
   color: #d6188a;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 8px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .trabajos-container h2 {
-  color: #fff;
-  font-size: 2.2rem;
+  color: #ffffff;
+  font-size: 2rem;
   font-weight: 800;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .trabajos-description {
   color: #000000;
-  max-width: 650px;
+  max-width: 680px;
   margin: 0 auto 35px;
-  font-size: 1rem;
+  font-size: 0.98rem;
   line-height: 1.6;
 }
 
-.trabajos-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+/* Carrusel horizontal */
+.trabajos-carousel-horizontal {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 18px;
 }
 
-.trabajo-card {
-  background-color: #fff;
-  border-radius: 10px;
+.trabajos-cards-horizontal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  width: 100%;
+}
+
+/* Card pequeña horizontal */
+.trabajo-card-horizontal {
+  background-color: #ffffff;
+  border-radius: 18px;
   overflow: hidden;
-  height: 260px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
-.trabajo-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+.trabajo-card-horizontal:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
 }
 
-.trabajo-card img {
+/* Foto vertical */
+.trabajo-img-horizontal {
+  width: 100%;
+  height: 250px;
+  background-color: #fff0f7;
+  overflow: hidden;
+}
+
+.trabajo-img-horizontal img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
-/* Responsive */
+/* Texto */
+.trabajo-texto-horizontal {
+  padding: 16px 18px 20px;
+  text-align: left;
+}
+
+.trabajo-texto-horizontal span {
+  display: inline-block;
+  color: #d63384;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.trabajo-texto-horizontal h3 {
+  color: #2b2b2b;
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.trabajo-texto-horizontal p {
+  color: #555555;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  margin: 0;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Flechas */
+.trabajos-btn {
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #d63384;
+  font-size: 2rem;
+  font-weight: 900;
+  cursor: pointer;
+  flex-shrink: 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4px;
+}
+
+.trabajos-btn:hover {
+  background-color: #d63384;
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+/* Tablet */
 @media (max-width: 900px) {
-  .trabajos-grid {
+  .trabajos-cards-horizontal {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .trabajo-img-horizontal {
+    height: 240px;
+  }
+
   .trabajos-container h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 
+/* Celular */
 @media (max-width: 600px) {
   .trabajos-section {
-    padding: 55px 15px;
+    padding: 55px 14px;
   }
 
-  .trabajos-grid {
+  .trabajos-carousel-horizontal {
+    gap: 8px;
+  }
+
+  .trabajos-cards-horizontal {
     grid-template-columns: 1fr;
   }
 
-  .trabajo-card {
-    height: 280px;
+  .trabajo-img-horizontal {
+    height: 320px;
   }
 
   .trabajos-container h2 {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
+  }
+
+  .trabajos-description {
+    font-size: 0.92rem;
+  }
+
+  .trabajos-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1.6rem;
   }
 }
