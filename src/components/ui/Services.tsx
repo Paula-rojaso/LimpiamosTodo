@@ -1,49 +1,70 @@
-import { FaCut, FaHandSparkles, FaWind } from "react-icons/fa";
+import {
+  FaHome,
+  FaBuilding,
+  FaBroom,
+  FaBath,
+  FaTruckMoving,
+  FaMagic,
+} from "react-icons/fa";
 import "./Services.css";
 
 export const Services = () => {
   const services = [
     {
-      icon: <FaHandSparkles size={28} />,
-      title: "Manicura Tradicional",
+      icon: <FaHome size={28} />,
+      title: "Casa o Departamento 1 Dormitorio",
       description:
-        "Servicio ideal para mantener tus uñas limpias, cuidadas y con un acabado delicado. Incluye limado, cuidado de cutículas y esmaltado a elección.",
-      price: "$12.900",
+        "Limpieza general para espacios pequeños. Incluye dormitorio, baño, cocina, living, pisos, superficies y orden básico del espacio.",
+      price: "Desde $25.000",
     },
     {
-      icon: <FaHandSparkles size={28} />,
-      title: "Esmaltado Permanente",
+      icon: <FaHome size={28} />,
+      title: "Casa o Departamento 2 Dormitorios y 1 Baño",
       description:
-        "Perfecto para lucir uñas impecables por más tiempo, con brillo intenso y mayor duración. Disponible en variedad de colores y estilos.",
-      price: "$15.900",
+        "Servicio ideal para hogares medianos. Incluye limpieza de dormitorios, baño, cocina, living, comedor, pisos y superficies principales.",
+      price: "Desde $40.000",
     },
     {
-      icon: <FaHandSparkles size={28} />,
-      title: "Diseño de Uñas Personalizado",
+      icon: <FaHome size={28} />,
+      title: "Casa o Departamento 3 Dormitorios y 2 Baños",
       description:
-        "Creamos diseños únicos según tu estilo, ocasión o preferencia. Desde detalles sutiles hasta decoraciones más llamativas y modernas.",
-      price: "$20.900",
+        "Limpieza general para hogares más amplios. Considera dormitorios, baños, cocina, living, comedor, pasillos, pisos y superficies visibles.",
+      price: "Desde $55.000",
     },
     {
-      icon: <FaCut size={28} />,
-      title: "Corte de Cabello",
+      icon: <FaBath size={28} />,
+      title: "Limpieza Profunda de Baños y Cocina",
       description:
-        "Cortes modernos y personalizados según tu rostro, estilo y preferencia. Te asesoramos para lograr un look fresco, cómodo y favorecedor.",
-      price: "$15.900",
+        "Servicio enfocado en zonas que requieren mayor higiene y detalle, como baños, cocina, grifería, superficies, muebles y espacios de uso frecuente.",
+      price: "Desde $35.000",
     },
     {
-      icon: <FaCut size={28} />,
-      title: "Coloración y Tintura",
+      icon: <FaBroom size={28} />,
+      title: "Limpieza Profunda del Hogar",
       description:
-        "Renueva tu imagen con coloración profesional, tonos naturales o cambios más atrevidos, cuidando siempre la salud y brillo de tu cabello.",
-      price: "$18.900",
+        "Limpieza más detallada para espacios que necesitan mayor dedicación. Incluye rincones, superficies, muebles, pisos, baños, cocina y áreas comunes.",
+      price: "Desde $65.000",
     },
     {
-      icon: <FaWind size={28} />,
-      title: "Peinados y Styling",
+      icon: <FaBuilding size={28} />,
+      title: "Limpieza de Oficinas",
       description:
-        "Peinados para eventos, ocasiones especiales o cambios de look. Trabajamos con dedicación para lograr un resultado elegante y duradero.",
-      price: "$25.900",
+        "Servicio de limpieza para espacios de trabajo, escritorios, baños, pisos, salas de reunión y zonas comunes. El valor depende del tamaño del lugar.",
+      price: "Desde $45.000",
+    },
+    {
+      icon: <FaTruckMoving size={28} />,
+      title: "Limpieza por Mudanza",
+      description:
+        "Ideal para antes o después de cambiarte de casa. Dejamos el espacio limpio, ordenado y listo para entregar o comenzar una nueva etapa.",
+      price: "Desde $70.000",
+    },
+    {
+      icon: <FaMagic size={28} />,
+      title: "Limpieza Personalizada",
+      description:
+        "Servicio adaptado a tus necesidades específicas. Puedes solicitar limpieza por horas, por áreas determinadas o según el estado del espacio.",
+      price: "Desde $25.000",
     },
   ];
 
@@ -51,16 +72,16 @@ export const Services = () => {
     <section id="servicios" className="services-section">
       <div className="services-container">
         <div className="services-header">
-          <span className="services-subtitle">Belleza y estilo</span>
+          <span className="services-subtitle">Limpieza profesional</span>
 
           <h2>
             Nuestros <span>Servicios</span>
           </h2>
 
           <p>
-            Ofrecemos servicios de peluquería y manicura profesional para cuidar
-            tu imagen, realzar tu estilo y entregarte una experiencia cercana,
-            moderna y personalizada.
+            Ofrecemos servicios de limpieza para casas, departamentos, oficinas
+            y espacios comerciales, con valores según cantidad de dormitorios,
+            baños y nivel de limpieza requerido.
           </p>
         </div>
 
@@ -77,6 +98,12 @@ export const Services = () => {
             </div>
           ))}
         </div>
+
+        <p className="services-note">
+          *Los valores pueden variar según tamaño del espacio, cantidad de baños,
+          nivel de suciedad y requerimientos especiales. No incluye lavado,
+          doblado ni planchado de ropa.
+        </p>
       </div>
     </section>
   );

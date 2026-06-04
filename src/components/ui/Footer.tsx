@@ -7,13 +7,13 @@ export const Footer = () => {
       <div className="footer-container">
         <div className="footer-brand">
           <a href="#inicio" className="footer-logo">
-            <img src="/logo.png" alt="Salón de manicura y peluquería" />
+            <img src="/logo.png" alt="Empresa de limpieza profesional" />
           </a>
 
           <p>
-            Salón de manicura y peluquería con atención profesional, detalles
-            delicados y una experiencia pensada para que te sientas y luzcas
-            increíble.
+            Empresa de limpieza profesional para casas, departamentos, oficinas
+            y espacios comerciales. Entregamos un servicio responsable, puntual
+            y enfocado en dejar tus espacios limpios, frescos y ordenados.
           </p>
 
           <div className="footer-socials">
@@ -51,6 +51,7 @@ export const Footer = () => {
           <a href="#inicio">Inicio</a>
           <a href="#nosotros">Nosotros</a>
           <a href="#servicios">Servicios</a>
+          <a href="#trabajos">Trabajos</a>
           <a href="#reserva">Reservar</a>
           <a href="#ubicacion">Ubicación</a>
           <a href="#contacto">Contacto</a>
@@ -58,8 +59,8 @@ export const Footer = () => {
 
         <div className="footer-contact">
           <h4>Datos de contacto</h4>
-          <p>Salón de Manicura y Peluquería</p>
-          <p>Av. Parque Central 707, Maipú, Chile</p>
+          <p>Servicio de Limpieza Profesional</p>
+          <p>Maipú, Santiago, Chile</p>
           <p>
             WhatsApp:{" "}
             <a
@@ -70,14 +71,14 @@ export const Footer = () => {
               +569 90138613
             </a>
           </p>
-          <p>Horario: Lun a Sáb 10:30 - 20:00</p>
+          <p>Horario: Lun a Sáb 08:00 - 20:00</p>
         </div>
 
         <div className="footer-action">
-          <h4>Agenda tu visita</h4>
+          <h4>Solicita tu limpieza</h4>
           <p>
-            Reserva tu hora para manicura, esmaltado, peluquería o tratamiento
-            capilar de forma rápida.
+            Agenda tu servicio de limpieza para casas, departamentos, oficinas
+            o espacios comerciales de forma rápida y sencilla.
           </p>
 
           <a href="#reserva" className="footer-button">
@@ -97,7 +98,7 @@ export const Footer = () => {
 
       <div className="footer-bottom">
         <p>
-          © 2026 Salón de Manicura y Peluquería. Todos los derechos reservados.
+          © 2026 Servicio de Limpieza Profesional. Todos los derechos reservados.
         </p>
       </div>
     </footer>

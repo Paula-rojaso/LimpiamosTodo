@@ -4,39 +4,39 @@ import "./Trabajos.css";
 const trabajos = [
   {
     id: 1,
-    imagen: "/uñasnudeplateado.jpg",
-    alt: "Diseño de uñas acrílicas en tonos nude y plateado",
-    titulo: "Uñas nude y plateado",
+    imagen: "/limpieza-hogar.jpg",
+    alt: "Limpieza general de hogar con espacios limpios y ordenados",
+    titulo: "Limpieza de hogar",
   },
   {
     id: 2,
-    imagen: "/balayage.avif",
-    alt: "Balayage profesional en tonos cálidos",
-    titulo: "Balayage profesional",
+    imagen: "/limpieza-departamento.jpg",
+    alt: "Departamento limpio y fresco después del servicio de limpieza",
+    titulo: "Limpieza de departamento",
   },
   {
     id: 3,
-    imagen: "/uñaselegantes.jpg",
-    alt: "Diseño de uñas elegantes en tonos rosados",
-    titulo: "Uñas elegantes",
+    imagen: "/limpieza-cocina.jpg",
+    alt: "Cocina limpia, ordenada y desinfectada",
+    titulo: "Limpieza de cocina",
   },
   {
     id: 4,
-    imagen: "/imagen4.png",
-    alt: "Coloración profesional de cabello",
-    titulo: "Coloración profesional",
+    imagen: "/limpieza-bano.jpg",
+    alt: "Baño limpio, higienizado y con superficies brillantes",
+    titulo: "Limpieza de baños",
   },
   {
     id: 5,
-    imagen: "/imagen5.png",
-    alt: "Coloración profesional de cabello",
-    titulo: "Diseño de uñas profesional",
+    imagen: "/limpieza-oficina.jpg",
+    alt: "Oficina limpia y ordenada para un ambiente de trabajo agradable",
+    titulo: "Limpieza de oficinas",
   },
   {
     id: 6,
-    imagen: "/imagen7.png",
-    alt: "Peinado profesional para ocasión especial",
-    titulo: "Peinado elegante",
+    imagen: "/limpieza-profunda.jpg",
+    alt: "Limpieza profunda de espacios con atención a cada detalle",
+    titulo: "Limpieza profunda",
   },
 ];
 
@@ -70,8 +70,9 @@ export const Trabajos = () => {
         <h2>Algunos de nuestros trabajos</h2>
 
         <p className="trabajos-description">
-          Conoce parte de nuestros diseños de manicura y peluquería, creados con
-          dedicación, estilo y atención a cada detalle.
+          Conoce parte de nuestros servicios de limpieza realizados en hogares,
+          departamentos, oficinas y espacios que requieren orden, higiene y
+          cuidado en cada detalle.
         </p>
 
         <div className="trabajos-carousel-horizontal">
@@ -91,7 +92,7 @@ export const Trabajos = () => {
                 </div>
 
                 <div className="trabajo-texto-horizontal">
-                  <span>Trabajo destacado</span>
+                  <span>Servicio destacado</span>
                   <h3>{trabajo.titulo}</h3>
                   <p>{trabajo.alt}</p>
                 </div>
