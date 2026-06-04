@@ -1,7 +1,7 @@
 .booking-section {
   width: 100%;
   padding: 100px 20px;
-  background: #ed9ecd;
+  background: #002b5b;
   color: #ffffff;
 }
 
@@ -19,7 +19,7 @@
 .booking-label {
   display: block;
   margin-bottom: 14px;
-  color: #d6188a;
+  color: #ffd500;
   font-size: 0.9rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -35,13 +35,13 @@
 }
 
 .booking-header h2 strong {
-  color: #d6188a;
+  color: #ffd500;
 }
 
 .booking-header p {
   max-width: 720px;
   margin: 20px auto 0;
-  color: #000000;
+  color: #d9f3ff;
   font-size: 1.1rem;
   line-height: 1.7;
 }
@@ -52,8 +52,8 @@
   margin: 0 auto;
   padding: 42px;
   border-radius: 20px;
-  background: #d6188a;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #004b8d;
+  border: 1px solid rgba(217, 243, 255, 0.22);
   box-shadow: 0 26px 60px rgba(0, 0, 0, 0.35);
   text-align: center;
 }
@@ -68,7 +68,7 @@
 .booking-google-card p {
   max-width: 560px;
   margin: 0 auto 30px;
-  color: #000000;
+  color: #d9f3ff;
   font-size: 1.05rem;
   line-height: 1.7;
 }
@@ -78,8 +78,8 @@
   padding: 0 32px;
   border: none;
   border-radius: 6px;
-  background: #f07ec2;
-  color: #ffffff;
+  background: #ffd500;
+  color: #002b5b;
   font-size: 1rem;
   font-weight: 900;
   cursor: pointer;
@@ -87,9 +87,9 @@
 }
 
 .booking-submit:hover {
-  background: #ed9ecd;
+  background: #ffea70;
   transform: translateY(-2px);
-  box-shadow: 0 14px 28px rgba(214, 170, 24, 0.22);
+  box-shadow: 0 14px 28px rgba(255, 213, 0, 0.25);
 }
 
 .booking-link {

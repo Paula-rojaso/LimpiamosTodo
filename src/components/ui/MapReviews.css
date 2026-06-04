@@ -3,7 +3,7 @@
 .map-reviews-section {
   width: 100%;
   padding: 75px 20px;
-  background: #ed9ecd;
+  background: #002b5b;
   color: #ffffff;
 }
 
@@ -24,7 +24,7 @@
 .reviews-card span {
   display: block;
   margin-bottom: 14px;
-  color: #d6188a;
+  color: #ffd500;
   font-size: 0.9rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -41,13 +41,13 @@
 }
 
 .map-reviews-header h2 strong {
-  color: #d6188a;
+  color: #ffd500;
 }
 
 .map-reviews-header p {
   max-width: 760px;
   margin: 20px auto 0;
-  color: #ffffff;
+  color: #d9f3ff;
   font-size: 1.1rem;
   line-height: 1.7;
 }
@@ -66,7 +66,7 @@
   overflow: hidden;
   border-radius: 22px;
   background: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(217, 243, 255, 0.18);
   box-shadow: 0 26px 60px rgba(0, 0, 0, 0.25);
 }
 
@@ -94,7 +94,7 @@
 
 .map-info h4 {
   margin: 0;
-  color: #000000;
+  color: #002b5b;
   font-size: 1.05rem;
   font-weight: 950;
   text-transform: uppercase;
@@ -102,7 +102,7 @@
 
 .map-info p {
   margin: 10px 0 0;
-  color: #e760b1;
+  color: #004b8d;
 }
 
 /* ===== BOTONES ===== */
@@ -124,27 +124,27 @@
 
 .map-button,
 .reviews-button {
-  background: #d6188a;
-  color: #ffffff;
-  border: 2px solid #d6188a;
+  background: #ffd500;
+  color: #002b5b;
+  border: 2px solid #ffd500;
 }
 
 .map-button:hover,
 .reviews-button:hover {
-  background: #e760b1;
-  border-color: #e760b1;
-  color: #ffffff;
+  background: #ffea70;
+  border-color: #ffea70;
+  color: #002b5b;
   transform: translateY(-2px);
 }
 
 .reviews-button-secondary {
   background: transparent;
-  color: #d6188a;
-  border: 2px solid #d6188a;
+  color: #004b8d;
+  border: 2px solid #004b8d;
 }
 
 .reviews-button-secondary:hover {
-  background: #d6188a;
+  background: #004b8d;
   color: #ffffff;
   transform: translateY(-2px);
 }
@@ -154,7 +154,7 @@
 .reviews-card {
   padding: 40px 34px;
   text-align: center;
-  border-color: rgba(231, 96, 177, 0.28);
+  border-color: rgba(143, 211, 244, 0.35);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,7 +162,7 @@
 
 .reviews-card h3 {
   margin: 0;
-  color: #000000;
+  color: #002b5b;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
   font-weight: 950;
   line-height: 1.15;
@@ -171,7 +171,7 @@
 .reviews-card p {
   max-width: 560px;
   margin: 22px auto 0;
-  color: #e760b1;
+  color: #004b8d;
   font-size: 1.08rem;
   line-height: 1.8;
 }
@@ -185,7 +185,7 @@
   padding: 20px 22px;
   border-radius: 18px;
   background: #ffffff;
-  border: 2px solid #e760b1;
+  border: 2px solid #8fd3f4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,7 +200,7 @@
 }
 
 .reviews-stars-wrapper small {
-  color: #d6188a;
+  color: #002b5b;
   font-size: 1rem;
   font-weight: 800;
   text-align: center;

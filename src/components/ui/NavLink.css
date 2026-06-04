@@ -8,7 +8,7 @@
 }
 
 .nav-link:hover {
-  color: #d6188a;
+  color: #ffd500;
 }
 
 .nav-link::after {
@@ -18,7 +18,7 @@
   bottom: -8px;
   width: 0;
   height: 2px;
-  background: #d6188a;
+  background: #ffd500;
   transition: 0.2s ease;
 }
 

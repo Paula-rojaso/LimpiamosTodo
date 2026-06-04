@@ -3,7 +3,7 @@
 .about-section {
   width: 100%;
   padding: 100px 20px;
-  background: #ed9ecd;
+  background: #002b5b;
   color: #ffffff;
 }
 
@@ -22,7 +22,8 @@
   height: 460px;
   overflow: hidden;
   border-radius: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(135, 206, 250, 0.5);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
 }
 
 .about-image {
@@ -30,7 +31,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: brightness(0.8);
+  filter: brightness(0.85);
 }
 
 .about-content {
@@ -47,12 +48,12 @@
 }
 
 .about-content h2 span {
-  color: #d6188a;
+  color: #ffd500;
 }
 
 .about-content p {
   margin: 24px 0 0;
-  color: #000000;
+  color: #d9f3ff;
   font-size: 1.12rem;
   line-height: 1.8;
 }

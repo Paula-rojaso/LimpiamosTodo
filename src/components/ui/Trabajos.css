@@ -1,6 +1,6 @@
 .trabajos-section {
   width: 100%;
-  background: #ed9ecd;
+  background: #002b5b;
   padding: 70px 20px;
   position: relative;
   overflow: hidden;
@@ -14,7 +14,7 @@
 
 .trabajos-subtitle {
   display: inline-block;
-  color: #d6188a;
+  color: #ffd500;
   font-weight: 1000;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -31,7 +31,7 @@
 }
 
 .trabajos-description {
-  color: #000000;
+  color: #d9f3ff;
   max-width: 680px;
   margin: 0 auto 35px;
   font-size: 0.98rem;
@@ -72,7 +72,7 @@
 .trabajo-img-horizontal {
   width: 100%;
   height: 350px;
-  background-color: #fff0f7;
+  background-color: #d9f3ff;
   overflow: hidden;
 }
 
@@ -92,7 +92,7 @@
 
 .trabajo-texto-horizontal span {
   display: inline-block;
-  color: #d63384;
+  color: #004b8d;
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 1.2px;
@@ -101,14 +101,14 @@
 }
 
 .trabajo-texto-horizontal h3 {
-  color: #2b2b2b;
+  color: #002b5b;
   font-size: 1.05rem;
   font-weight: 800;
   margin-bottom: 6px;
 }
 
 .trabajo-texto-horizontal p {
-  color: #555555;
+  color: #004b8d;
   font-size: 0.82rem;
   line-height: 1.4;
   margin: 0;
@@ -126,7 +126,7 @@
   border: none;
   border-radius: 50%;
   background-color: #ffffff;
-  color: #d63384;
+  color: #002b5b;
   font-size: 2rem;
   font-weight: 900;
   cursor: pointer;
@@ -140,8 +140,8 @@
 }
 
 .trabajos-btn:hover {
-  background-color: #d63384;
-  color: #ffffff;
+  background-color: #ffd500;
+  color: #002b5b;
   transform: scale(1.08);
 }
 

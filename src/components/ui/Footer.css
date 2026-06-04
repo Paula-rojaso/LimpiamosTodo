@@ -1,9 +1,9 @@
 .footer-section {
   width: 100%;
-  background: #ed9ecd;
+  background: #002b5b;
   color: #ffffff;
   padding: 70px 20px 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(217, 243, 255, 0.12);
 }
 
 .footer-container {
@@ -43,7 +43,7 @@
 .footer-action p,
 .footer-bottom p {
   margin: 0;
-  color: #000000;
+  color: #d9f3ff;
   font-size: 0.98rem;
   line-height: 1.7;
 }
@@ -52,7 +52,7 @@
 .footer-contact h4,
 .footer-action h4 {
   margin: 0 0 18px;
-  color: #000000;
+  color: #ffd500;
   font-size: 1.05rem;
   font-weight: 900;
 }
@@ -65,14 +65,14 @@
 .footer-links a {
   width: fit-content;
   margin-bottom: 12px;
-  color: #000000;
+  color: #d9f3ff;
   text-decoration: none;
   font-weight: 700;
   transition: 0.2s ease;
 }
 
 .footer-links a:hover {
-  color: #d6188a;
+  color: #ffd500;
   transform: translateX(4px);
 }
 
@@ -80,13 +80,23 @@
   margin-bottom: 10px;
 }
 
+.footer-contact a {
+  color: #ffd500;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
 .footer-button {
   margin-top: 22px;
   min-height: 46px;
   padding: 0 24px;
   border-radius: 6px;
-  background: #d6188a;
-  color: #ffffff;
+  background: #ffd500;
+  color: #002b5b;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -96,8 +106,10 @@
 }
 
 .footer-button:hover {
-  background: #d6188a;
+  background: #ffea70;
+  color: #002b5b;
   transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(255, 213, 0, 0.25);
 }
 
 .footer-bottom {
@@ -106,7 +118,63 @@
   margin: 54px auto 0;
   padding-top: 24px;
   text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(217, 243, 255, 0.12);
+}
+
+.footer-map-link {
+  display: block;
+  margin-top: 16px;
+  color: #8fd3f4;
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer-map-link:hover {
+  color: #ffd500;
+  text-decoration: underline;
+}
+
+.footer-socials {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-socials a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #004b8d;
+  color: #ffd500;
+  border: 1px solid rgba(217, 243, 255, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: 0.2s ease;
+}
+
+.footer-socials a:hover {
+  background: #ffd500;
+  color: #002b5b;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(255, 213, 0, 0.25);
+}
+
+.footer-socials i {
+  font-family: "bootstrap-icons" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 1;
+  display: inline-block;
+}
+
+.footer-socials svg {
+  font-size: 1.25rem;
 }
 
 @media (max-width: 1000px) {
@@ -138,78 +206,8 @@
   .footer-button {
     width: 100%;
   }
-}
 
-.footer-map-link {
-  display: block;
-  margin-top: 16px;
-  color: #d6188a;
-  font-size: 0.95rem;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.footer-map-link:hover {
-  text-decoration: underline;
-}
-
-.footer-socials {
-  margin-top: 26px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.footer-socials a {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: #09090b;
-  color: #d6188a;
-  border: 1px solid rgba(214, 170, 24, 0.35);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 1.25rem;
-  transition: 0.2s ease;
-}
-
-.footer-socials a:hover {
-  background: #d6188a;
-  color: #ffffff;
-  transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(214, 170, 24, 0.22);
-}
-
-.footer-map-link {
-  display: block;
-  margin-top: 16px;
-  color: #d6188a;
-  font-size: 0.95rem;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.footer-map-link:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 650px) {
   .footer-socials {
     justify-content: center;
   }
-}
-
-.footer-socials i {
-  font-family: "bootstrap-icons" !important;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.25rem;
-  line-height: 1;
-  display: inline-block;
-}
-
-.footer-socials svg {
-  font-size: 1.25rem;
 }

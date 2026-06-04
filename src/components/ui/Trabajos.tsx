@@ -5,38 +5,38 @@ const trabajos = [
   {
     id: 1,
     imagen: "/uñasnudeplateado.jpg",
-    alt: "Diseño de uñas acrílicas en tonos nude y plateado",
-    titulo: "Uñas nude y plateado",
+    alt: "Limpieza general de casa o departamento",
+    titulo: "Limpieza de hogar",
   },
   {
     id: 2,
     imagen: "/balayage.avif",
-    alt: "Balayage profesional en tonos cálidos",
-    titulo: "Balayage profesional",
+    alt: "Limpieza profunda de cocina y superficies",
+    titulo: "Limpieza de cocina",
   },
   {
     id: 3,
     imagen: "/uñaselegantes.jpg",
-    alt: "Diseño de uñas elegantes en tonos rosados",
-    titulo: "Uñas elegantes",
+    alt: "Limpieza e higienización de baños",
+    titulo: "Limpieza de baños",
   },
   {
     id: 4,
     imagen: "/imagen4.png",
-    alt: "Coloración profesional de cabello",
-    titulo: "Coloración profesional",
+    alt: "Limpieza de oficinas y espacios de trabajo",
+    titulo: "Limpieza de oficinas",
   },
   {
     id: 5,
     imagen: "/imagen5.png",
-    alt: "Coloración profesional de cabello",
-    titulo: "Diseño de uñas profesional",
+    alt: "Limpieza profunda con atención a cada detalle",
+    titulo: "Limpieza profunda",
   },
   {
     id: 6,
     imagen: "/imagen7.png",
-    alt: "Peinado profesional para ocasión especial",
-    titulo: "Peinado elegante",
+    alt: "Limpieza personalizada según las necesidades del cliente",
+    titulo: "Limpieza personalizada",
   },
 ];
 
@@ -70,8 +70,8 @@ export const Trabajos = () => {
         <h2>Algunos de nuestros trabajos</h2>
 
         <p className="trabajos-description">
-          Conoce parte de nuestros diseños de manicura y peluquería, creados con
-          dedicación, estilo y atención a cada detalle.
+          Conoce parte de nuestros servicios de limpieza realizados con
+          dedicación, responsabilidad y atención a cada detalle.
         </p>
 
         <div className="trabajos-carousel-horizontal">
