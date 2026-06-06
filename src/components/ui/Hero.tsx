@@ -2,12 +2,15 @@ import { FaCalendarAlt } from "react-icons/fa";
 import "./Hero.css";
 
 export const Hero = () => {
+  const googleCalendarUrl =
+    "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3s2gkWruScg1v074MNYHFCHUkdoRlZlWsbkTSihq1kqeLWut9UN7z-BHfD8GOtKBnabjaRLFgB?gv=true";
+
   return (
     <section id="inicio" className="hero-section">
       <div className="hero-background">
         <img
           src="/uñasbanner.jpeg"
-          alt="Manicura y peluquería"
+          alt="Servicio de limpieza profesional"
           className="about-image"
         />
         <div className="hero-overlay"></div>
@@ -25,7 +28,12 @@ export const Hero = () => {
         </p>
 
         <div className="hero-buttons">
-          <a href="#reserva" className="hero-button hero-button-primary">
+          <a
+            href={googleCalendarUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hero-button hero-button-primary"
+          >
             <FaCalendarAlt size={22} />
             Reserva tu Cita
           </a>

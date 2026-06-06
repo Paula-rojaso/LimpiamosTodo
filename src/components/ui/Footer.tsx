@@ -2,12 +2,18 @@ import "./Footer.css";
 import { FaInstagram, FaFacebookF, FaTiktok } from "react-icons/fa";
 
 export const Footer = () => {
+  const googleCalendarUrl =
+    "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3s2gkWruScg1v074MNYHFCHUkdoRlZlWsbkTSihq1kqeLWut9UN7z-BHfD8GOtKBnabjaRLFgB?gv=true";
+
   return (
     <footer id="contacto" className="footer-section">
       <div className="footer-container">
         <div className="footer-brand">
           <a href="#inicio" className="footer-logo">
-            <img src="/logo.png" alt="Limpiamos Todo - Servicio de limpieza profesional" />
+            <img
+              src="/logo.png"
+              alt="Limpiamos Todo - Servicio de limpieza profesional"
+            />
           </a>
 
           <p>
@@ -52,16 +58,20 @@ export const Footer = () => {
           <a href="#inicio">Inicio</a>
           <a href="#nosotros">Nosotros</a>
           <a href="#servicios">Servicios</a>
-          <a href="#trabajos">Trabajos</a>
-          <a href="#reserva">Reservar</a>
-          <a href="#ubicacion">Ubicación</a>
+          <a href="#agendar">Agendar</a>
           <a href="#contacto">Contacto</a>
         </div>
 
         <div className="footer-contact">
           <h4>Datos de contacto</h4>
+
           <p>Limpiamos Todo</p>
-          <p>Servicio de limpieza en Maipú y alrededores</p>
+
+          <p>
+            Servicio de limpieza para casas, departamentos, oficinas y espacios
+            comerciales.
+          </p>
+
           <p>
             WhatsApp:{" "}
             <a
@@ -72,35 +82,31 @@ export const Footer = () => {
               +569 949 02 677
             </a>
           </p>
+
           <p>Horario: Lun a Sáb 08:00 - 20:00</p>
         </div>
 
         <div className="footer-action">
           <h4>Agenda tu limpieza</h4>
+
           <p>
-            Reserva tu servicio de limpieza para casa, departamento, oficina o
-            espacio comercial de forma rápida y sencilla.
+            Reserva tu servicio de limpieza de forma rápida y sencilla desde
+            nuestro calendario online.
           </p>
 
-          <a href="#reserva" className="footer-button">
-            Reservar ahora
-          </a>
-
           <a
-            href="https://maps.app.goo.gl/cTYeBDm45uoFi8vDA"
+            href={googleCalendarUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="footer-map-link"
+            className="footer-button"
           >
-            Ver ubicación en Google Maps
+            Reservar ahora
           </a>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>
-          © 2026 Limpiamos Todo. Todos los derechos reservados.
-        </p>
+        <p>© 2026 Limpiamos Todo. Todos los derechos reservados.</p>
       </div>
     </footer>
   );

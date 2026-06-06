@@ -1,7 +1,8 @@
 import "./BookingCalendar.css";
 
 const BookingCalendar = () => {
-  const googleCalendarUrl = "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3s2gkWruScg1v074MNYHFCHUkdoRlZlWsbkTSihq1kqeLWut9UN7z-BHfD8GOtKBnabjaRLFgB?gv=true";
+  const googleCalendarUrl =
+    "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3s2gkWruScg1v074MNYHFCHUkdoRlZlWsbkTSihq1kqeLWut9UN7z-BHfD8GOtKBnabjaRLFgB?gv=true";
 
   return (
     <section id="agendar" className="booking-section">
