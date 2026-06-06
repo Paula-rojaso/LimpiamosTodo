@@ -1,14 +1,9 @@
 import {
   FaRegBuilding,
   FaClipboardCheck,
-  FaKey,
   FaSprayCan,
 } from "react-icons/fa";
-import {
-  MdCleaningServices,
-  MdOutlineLocalLaundryService,
-  MdOutlineInventory2,
-} from "react-icons/md";
+import { MdCleaningServices } from "react-icons/md";
 import { GiVacuumCleaner } from "react-icons/gi";
 import "./Services.css";
 
