@@ -39,6 +39,12 @@ export const Services = () => {
       description:
         "Limpieza y mantenimiento de jardines, terrazas, patios y otras áreas exteriores de tu propiedad.",
     },
+    {
+      icon: <MdCleaningServices size={34} />,
+      title: "Limpieza Pre Entrega",
+      description:
+        "Servicio ideal para preparar casas, departamentos u oficinas antes de entregar, arrendar o recibir visitas.",
+    },
   ];
 
   return (
