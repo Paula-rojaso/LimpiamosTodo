@@ -19,7 +19,7 @@ export const Footer = () => {
 
           <div className="footer-socials">
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/limpiamostodocl/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -28,7 +28,7 @@ export const Footer = () => {
             </a>
 
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/profile.php?id=61590514116096"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -37,7 +37,7 @@ export const Footer = () => {
             </a>
 
             <a
-              href="https://www.tiktok.com/"
+              href="https://www.tiktok.com/@limpiamostodocl"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="TikTok"
@@ -65,11 +65,11 @@ export const Footer = () => {
           <p>
             WhatsApp:{" "}
             <a
-              href="https://wa.me/56990138613"
+              href="https://wa.me/56994902677"
               target="_blank"
               rel="noopener noreferrer"
             >
-              +569 90138613
+              +569 949 02 677
             </a>
           </p>
           <p>Horario: Lun a Sáb 08:00 - 20:00</p>

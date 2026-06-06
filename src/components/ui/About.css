@@ -3,7 +3,7 @@
 .about-section {
   width: 100%;
   padding: 100px 20px;
-  background: #002b5b;
+  background: #4b008b;
   color: #ffffff;
 }
 
@@ -22,8 +22,9 @@
   height: 460px;
   overflow: hidden;
   border-radius: 22px;
-  border: 2px solid rgba(135, 206, 250, 0.5);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.38);
+  background: #f3f3f5;
 }
 
 .about-image {
@@ -31,7 +32,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: brightness(0.85);
+  filter: brightness(0.9) contrast(1.05);
 }
 
 .about-content {
@@ -48,14 +49,19 @@
 }
 
 .about-content h2 span {
-  color: #ffd500;
+  color: #d9d9df;
 }
 
 .about-content p {
   margin: 24px 0 0;
-  color: #d9f3ff;
+  color: #eeeeee;
   font-size: 1.12rem;
   line-height: 1.8;
+}
+
+.about-content p strong {
+  color: #ffffff;
+  font-weight: 800;
 }
 
 @media (max-width: 900px) {

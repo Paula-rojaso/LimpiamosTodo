@@ -1,14 +1,19 @@
+/* ===== SERVICES / SERVICIOS ===== */
+
 .services-section {
   width: 100%;
   padding: 90px 20px;
-  background: #002b5b;
+  background: #4b008b;
   color: #ffffff;
+  scroll-margin-top: 100px;
 }
 
 .services-container {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+/* ===== HEADER ===== */
 
 .services-header {
   text-align: center;
@@ -18,7 +23,7 @@
 .services-header span {
   display: block;
   margin-bottom: 14px;
-  color: #ffd500;
+  color: #d9d9df;
   font-size: 0.9rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -34,16 +39,18 @@
 }
 
 .services-header h2 span {
-  color: #ffd500;
+  color: #d9d9df;
 }
 
 .services-header p {
   max-width: 760px;
   margin: 18px auto 0;
-  color: #d9f3ff;
+  color: #eeeeee;
   font-size: 1.15rem;
   line-height: 1.7;
 }
+
+/* ===== GRID ===== */
 
 .services-grid {
   display: grid;
@@ -51,58 +58,69 @@
   gap: 34px;
 }
 
+/* ===== CARD BLANCA ===== */
+
 .service-card {
   min-height: 230px;
   padding: 36px 32px;
-  border-radius: 18px;
-  background: #004b8d;
-  border: 1px solid rgba(217, 243, 255, 0.18);
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #d9d9df;
   text-align: left;
   transition: 0.25s ease;
   position: relative;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
 }
 
 .service-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(143, 211, 244, 0.55);
-  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  border-color: #4b008b;
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.28);
 }
+
+/* ===== ICONO ===== */
 
 .service-icon {
   width: 52px;
   height: 52px;
   margin-bottom: 28px;
-  border-radius: 8px;
-  background: rgba(255, 213, 0, 0.14);
-  color: #ffd500;
+  border-radius: 12px;
+  background: rgba(75, 0, 139, 0.10);
+  color: #4b008b;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 26px;
 }
 
+/* ===== TEXTO CARD ===== */
+
 .service-card h3 {
   margin: 0 0 14px;
-  color: #ffffff;
+  color: #1f1f24;
   font-size: 1.25rem;
   font-weight: 900;
 }
 
 .service-card p {
   margin: 0;
-  color: #d9f3ff;
+  color: #666666;
   font-size: 1rem;
   line-height: 1.7;
 }
+
+/* ===== PRECIO ===== */
 
 .service-price {
   position: absolute;
   top: 34px;
   right: 32px;
-  color: #ffd500;
+  color: #4b008b;
   font-size: 1.55rem;
   font-weight: 950;
 }
+
+/* ===== RESPONSIVE TABLET ===== */
 
 @media (max-width: 1000px) {
   .services-grid {
@@ -110,8 +128,37 @@
   }
 }
 
+/* ===== RESPONSIVE CELULAR ===== */
+
 @media (max-width: 680px) {
+  .services-section {
+    padding: 70px 18px;
+  }
+
+  .services-header {
+    margin-bottom: 45px;
+  }
+
+  .services-header h2 {
+    font-size: 2rem;
+  }
+
+  .services-header p {
+    font-size: 1rem;
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 32px 26px;
+    border-radius: 18px;
+  }
+
+  .service-price {
+    position: static;
+    display: block;
+    margin-top: 18px;
   }
 }

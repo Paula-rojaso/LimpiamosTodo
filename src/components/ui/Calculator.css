@@ -1,0 +1,389 @@
+/* ===== CALCULADORA DE COTIZACIÓN ===== */
+
+.calculator-section {
+  width: 100%;
+  background: #4b008b;
+  color: #ffffff;
+  padding: 90px 20px;
+  scroll-margin-top: 100px;
+}
+
+/* ===== TÍTULO ===== */
+
+.calculator-header {
+  max-width: 850px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.calculator-header span {
+  display: block;
+  margin-bottom: 14px;
+  color: #d9d9df;
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.calculator-header h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2.1rem, 4vw, 3.5rem);
+  font-weight: 950;
+  line-height: 1.15;
+}
+
+.calculator-header h2 strong {
+  color: #d9d9df;
+}
+
+.calculator-header p {
+  max-width: 720px;
+  margin: 20px auto 0;
+  color: #eeeeee;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ===== LAYOUT PRINCIPAL ===== */
+
+.calculator-layout {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.05fr 0.95fr;
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.32);
+}
+
+/* ===== COLUMNAS ===== */
+
+.calculator-column {
+  padding: 44px 34px;
+  background: #ffffff;
+  color: #1f1f24;
+  border-right: 1px solid #d9d9df;
+}
+
+.calculator-column h3 {
+  margin: 0 0 26px;
+  color: #555555;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* ===== SELECT PROPIEDAD ===== */
+
+.property-box {
+  border: 1px solid #d9d9df;
+  border-radius: 14px;
+  padding: 18px;
+  background: #ffffff;
+}
+
+.property-title {
+  display: block;
+  margin-bottom: 14px;
+  color: #4b008b;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.property-box select {
+  width: 100%;
+  min-height: 58px;
+  padding: 0 16px;
+  border: 1px solid #d9d9df;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1f1f24;
+  font-size: 1rem;
+  font-weight: 800;
+  outline: none;
+  cursor: pointer;
+}
+
+.property-box select:focus {
+  border-color: #4b008b;
+  box-shadow: 0 0 0 3px rgba(75, 0, 139, 0.12);
+}
+
+/* ===== EXTRAS ===== */
+
+.extras-column {
+  max-height: 620px;
+  overflow-y: auto;
+}
+
+.extras-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.extra-card {
+  padding: 18px;
+  border: 1px solid #d9d9df;
+  border-radius: 14px;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+.extra-card:hover {
+  border-color: #4b008b;
+  transform: translateY(-2px);
+}
+
+.extra-card.active {
+  border-color: #4b008b;
+  background: rgba(75, 0, 139, 0.06);
+}
+
+.extra-card h4 {
+  margin: 0 0 8px;
+  color: #1f1f24;
+  font-size: 1.08rem;
+  font-weight: 900;
+}
+
+.extra-card strong {
+  display: block;
+  color: #4b008b;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.extra-card p {
+  margin: 0;
+  color: #666666;
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.extra-card button {
+  min-width: 92px;
+  min-height: 38px;
+  border: 2px solid #4b008b;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #4b008b;
+  font-size: 0.9rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.extra-card button:hover {
+  background: #4b008b;
+  color: #ffffff;
+}
+
+.extra-card.active button {
+  background: #4b008b;
+  color: #ffffff;
+}
+
+/* ===== RESUMEN ===== */
+
+.calculator-summary {
+  padding: 48px 38px;
+  background: #ffffff;
+  color: #1f1f24;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+
+.summary-total-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.summary-total-main span {
+  margin-top: 20px;
+  color: #4b008b;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.summary-total-main strong {
+  color: #4b008b;
+  font-size: clamp(3.2rem, 5vw, 5rem);
+  font-weight: 950;
+  line-height: 0.9;
+}
+
+.summary-total-main small {
+  margin-top: 10px;
+  color: #4b008b;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.summary-box {
+  width: 100%;
+  max-width: 390px;
+  padding: 24px;
+  border-radius: 14px;
+  background: #f3f3f5;
+  border: 1px solid #d9d9df;
+}
+
+.summary-row {
+  padding: 16px 0;
+  border-bottom: 1px solid #d9d9df;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.summary-row span {
+  color: #555555;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.summary-row strong {
+  color: #4b008b;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.summary-final {
+  border-bottom: none;
+}
+
+.summary-final span {
+  color: #1f1f24;
+  font-size: 1.28rem;
+  font-weight: 950;
+}
+
+.summary-final strong {
+  color: #4b008b;
+  font-size: 1.28rem;
+  font-weight: 950;
+}
+
+/* ===== BOTÓN WHATSAPP ===== */
+
+.summary-button {
+  width: 100%;
+  max-width: 390px;
+  min-height: 52px;
+  margin-top: 26px;
+  border-radius: 10px;
+  background: #4b008b;
+  color: #ffffff;
+  border: 2px solid #4b008b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 950;
+  transition: 0.2s ease;
+}
+
+.summary-button:hover {
+  background: #ffffff;
+  color: #4b008b;
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE TABLET ===== */
+
+@media (max-width: 1050px) {
+  .calculator-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .calculator-column {
+    border-right: none;
+    border-bottom: 1px solid #d9d9df;
+  }
+
+  .extras-column {
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  .calculator-summary {
+    padding-top: 44px;
+  }
+}
+
+/* ===== RESPONSIVE CELULAR ===== */
+
+@media (max-width: 600px) {
+  .calculator-section {
+    padding: 70px 16px;
+  }
+
+  .calculator-header {
+    margin-bottom: 36px;
+  }
+
+  .calculator-header h2 {
+    font-size: 2rem;
+  }
+
+  .calculator-header p {
+    font-size: 1rem;
+  }
+
+  .calculator-layout {
+    border-radius: 18px;
+  }
+
+  .calculator-column,
+  .calculator-summary {
+    padding: 34px 18px;
+  }
+
+  .calculator-column h3 {
+    font-size: 1.05rem;
+  }
+
+  .extra-card {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+  }
+
+  .extra-card button {
+    width: 100%;
+    min-height: 42px;
+  }
+
+  .summary-total-main strong {
+    font-size: 3rem;
+  }
+
+  .summary-total-main span {
+    font-size: 1.4rem;
+  }
+
+  .summary-total-main small {
+    font-size: 0.95rem;
+  }
+
+  .summary-box,
+  .summary-button {
+    max-width: 100%;
+  }
+}

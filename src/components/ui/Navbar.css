@@ -4,9 +4,9 @@
   left: 0;
   width: 100%;
   z-index: 999;
-  background: rgba(0, 43, 91, 0.92);
+  background: rgba(75, 0, 139, 0.92);
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(217, 243, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .navbar-container {
@@ -58,7 +58,7 @@
 }
 
 .navbar-socials a {
-  color: #ffd500;
+  color: #ffffff;
   font-size: 1.1rem;
   text-decoration: none;
   display: inline-flex;
@@ -68,7 +68,7 @@
 }
 
 .navbar-socials a:hover {
-  color: #8fd3f4;
+  color: #d9d9df;
   transform: translateY(-2px);
 }
 
@@ -76,8 +76,8 @@
   min-height: 48px;
   padding: 0 28px;
   border-radius: 999px;
-  background: #ffd500;
-  color: #002b5b;
+  background: #ffffff;
+  color: #4b008b;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -85,10 +85,13 @@
   font-size: 0.95rem;
   font-weight: 900;
   transition: 0.2s ease;
+  border: 2px solid #ffffff;
 }
 
 .navbar-button:hover {
-  background: #ffea70;
+  background: #d9d9df;
+  border-color: #d9d9df;
+  color: #4b008b;
   transform: translateY(-2px);
 }
 
@@ -100,8 +103,8 @@
   height: 44px;
   border: none;
   border-radius: 8px;
-  background: #ffd500;
-  color: #002b5b;
+  background: #ffffff;
+  color: #4b008b;
   font-size: 1.4rem;
   align-items: center;
   justify-content: center;
@@ -143,14 +146,14 @@ body {
     top: 76px;
     left: 0;
     width: 100%;
-    background: rgba(0, 43, 91, 0.96);
+    background: rgba(75, 0, 139, 0.96);
     backdrop-filter: blur(14px);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0;
     padding: 18px 0 8px;
-    border-bottom: 1px solid rgba(217, 243, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
   }
 
   .navbar-menu.active a {
@@ -161,8 +164,8 @@ body {
   }
 
   .navbar-menu.active a:hover {
-    color: #ffd500;
-    background: rgba(143, 211, 244, 0.12);
+    color: #d9d9df;
+    background: rgba(255, 255, 255, 0.10);
   }
 
   .navbar-actions.active {
@@ -170,7 +173,7 @@ body {
     top: 382px;
     left: 0;
     width: 100%;
-    background: rgba(0, 43, 91, 0.96);
+    background: rgba(75, 0, 139, 0.96);
     backdrop-filter: blur(14px);
     display: flex;
     flex-direction: column;

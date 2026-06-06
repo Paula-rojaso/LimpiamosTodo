@@ -63,7 +63,7 @@ export const Trabajos = () => {
   };
 
   return (
-    <section id="trabajos" className="trabajos-section">
+    <section id="galeria" className="trabajos-section">
       <div className="trabajos-container">
         <span className="trabajos-subtitle">Galería</span>
 

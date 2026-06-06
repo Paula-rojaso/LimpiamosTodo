@@ -1,11 +1,14 @@
+/* ===== TRABAJOS / GALERÍA ===== */
+
 .trabajos-section {
   width: 100%;
-  background: #002b5b;
+  background: #4b008b;
   padding: 70px 20px;
   position: relative;
   overflow: hidden;
 }
-/*alto de la card*/
+
+/* Alto de la card */
 .trabajos-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -14,7 +17,7 @@
 
 .trabajos-subtitle {
   display: inline-block;
-  color: #ffd500;
+  color: #d9d9df;
   font-weight: 1000;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -31,7 +34,7 @@
 }
 
 .trabajos-description {
-  color: #d9f3ff;
+  color: #eeeeee;
   max-width: 680px;
   margin: 0 auto 35px;
   font-size: 0.98rem;
@@ -59,20 +62,21 @@
   background-color: #ffffff;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.38);
   transition: all 0.3s ease;
 }
 
 .trabajo-card-horizontal:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.45);
 }
 
 /* Foto vertical */
 .trabajo-img-horizontal {
   width: 100%;
   height: 350px;
-  background-color: #d9f3ff;
+  background-color: #f3f3f5;
   overflow: hidden;
 }
 
@@ -82,17 +86,19 @@
   object-fit: cover;
   object-position: center;
   display: block;
+  filter: brightness(0.9) contrast(1.05);
 }
 
 /* Texto */
 .trabajo-texto-horizontal {
   padding: 16px 18px 20px;
   text-align: left;
+  background: #ffffff;
 }
 
 .trabajo-texto-horizontal span {
   display: inline-block;
-  color: #004b8d;
+  color: #4b008b;
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 1.2px;
@@ -101,14 +107,14 @@
 }
 
 .trabajo-texto-horizontal h3 {
-  color: #002b5b;
+  color: #2b0052;
   font-size: 1.05rem;
   font-weight: 800;
   margin-bottom: 6px;
 }
 
 .trabajo-texto-horizontal p {
-  color: #004b8d;
+  color: #555555;
   font-size: 0.82rem;
   line-height: 1.4;
   margin: 0;
@@ -126,7 +132,7 @@
   border: none;
   border-radius: 50%;
   background-color: #ffffff;
-  color: #002b5b;
+  color: #4b008b;
   font-size: 2rem;
   font-weight: 900;
   cursor: pointer;
@@ -140,8 +146,8 @@
 }
 
 .trabajos-btn:hover {
-  background-color: #ffd500;
-  color: #002b5b;
+  background-color: #d9d9df;
+  color: #4b008b;
   transform: scale(1.08);
 }
 

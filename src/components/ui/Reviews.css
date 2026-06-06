@@ -1,0 +1,201 @@
+/* ===== SECCIÓN RESEÑAS ===== */
+
+.reviews-section {
+  width: 100%;
+  background: #4b008b;
+  padding: 90px 20px;
+  scroll-margin-top: 100px;
+}
+
+/* ===== ENCABEZADO GENERAL ===== */
+
+.reviews-header {
+  max-width: 850px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.reviews-header span {
+  display: block;
+  margin-bottom: 12px;
+  color: #4b008b;
+  font-size: 0.85rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.reviews-header h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 950;
+  line-height: 1.15;
+}
+
+.reviews-header p {
+  max-width: 700px;
+  margin: 18px auto 0;
+  color: #a8a5a5;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ===== CARD GOOGLE REVIEWS ===== */
+
+.mini-reviews-card {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 34px 38px;
+  background: #ffffff;
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
+
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 55px;
+}
+
+/* ===== TEXTO CARD ===== */
+
+.mini-reviews-content {
+  text-align: left;
+}
+
+.mini-reviews-content span {
+  display: block;
+  margin-bottom: 8px;
+  color: #4b008b;
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.mini-reviews-content h3 {
+  margin: 0;
+  color: #1f1f24;
+  font-size: 1.45rem;
+  font-weight: 950;
+  line-height: 1.25;
+}
+
+.mini-reviews-content p {
+  max-width: 720px;
+  margin: 12px 0 0;
+  color: #666666;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+/* ===== LOGO + BOTÓN ===== */
+
+.mini-reviews-action {
+  display: contents;
+}
+
+.mini-google-logo {
+  width: 130px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  justify-self: center;
+}
+
+.mini-reviews-button {
+  min-height: 46px;
+  padding: 0 28px;
+  border-radius: 10px;
+  background: #4b008b;
+  color: #ffffff;
+  border: 2px solid #4b008b;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 900;
+  white-space: nowrap;
+  transition: 0.2s ease;
+  justify-self: end;
+}
+
+.mini-reviews-button:hover {
+  background: #ffffff;
+  color: #4b008b;
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE TABLET ===== */
+
+@media (max-width: 900px) {
+  .reviews-section {
+    padding: 80px 18px;
+  }
+
+  .mini-reviews-card {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 32px 26px;
+  }
+
+  .mini-reviews-action {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+  }
+
+  .mini-google-logo {
+    justify-self: start;
+  }
+
+  .mini-reviews-button {
+    justify-self: start;
+  }
+}
+
+/* ===== RESPONSIVE CELULAR ===== */
+
+@media (max-width: 600px) {
+  .reviews-section {
+    padding: 70px 16px;
+  }
+
+  .reviews-header {
+    margin-bottom: 30px;
+  }
+
+  .reviews-header h2 {
+    font-size: 2rem;
+  }
+
+  .reviews-header p {
+    font-size: 1rem;
+  }
+
+  .mini-reviews-card {
+    padding: 28px 22px;
+    border-radius: 18px;
+  }
+
+  .mini-reviews-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .mini-reviews-action {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .mini-google-logo {
+    width: 170px;
+  }
+
+  .mini-reviews-button {
+    width: 100%;
+  }
+}

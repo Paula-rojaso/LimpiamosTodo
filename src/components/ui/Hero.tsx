@@ -15,7 +15,7 @@ export const Hero = () => {
 
       <div className="hero-content">
         <h1>
-          Servicio de Limpieza Profesional en <span>Maipú</span>
+          Servicio de Limpieza <span>Profesional</span>
         </h1>
 
         <p>

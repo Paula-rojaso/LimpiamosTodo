@@ -1,49 +1,48 @@
-import { FaHome, FaBroom, FaBuilding } from "react-icons/fa";
+import {
+  FaRegBuilding,
+  FaClipboardCheck,
+  FaKey,
+  FaSprayCan,
+} from "react-icons/fa";
+import {
+  MdCleaningServices,
+  MdOutlineLocalLaundryService,
+  MdOutlineInventory2,
+} from "react-icons/md";
+import { GiVacuumCleaner } from "react-icons/gi";
 import "./Services.css";
 
 export const Services = () => {
   const services = [
     {
-      icon: <FaHome size={28} />,
-      title: "Casa o Departamento 1 Dormitorio",
+      icon: <MdCleaningServices size={34} />,
+      title: "Limpieza Estándar",
       description:
-        "Servicio ideal para espacios pequeños. Incluye limpieza general de dormitorio, baño, cocina, living, pisos, superficies y orden básico.",
-      price: "Desde $25.000",
+        "Limpieza completa y eficiente para dejar tu espacio listo para usar.",
     },
     {
-      icon: <FaHome size={28} />,
-      title: "Casa o Departamento 2 Dormitorios y 1 Baño",
-      description:
-        "Limpieza general para hogares medianos. Incluye dormitorios, baño, cocina, living, comedor, pisos y superficies principales.",
-      price: "Desde $40.000",
-    },
-    {
-      icon: <FaHome size={28} />,
-      title: "Casa o Departamento 3 Dormitorios y 2 Baños",
-      description:
-        "Servicio pensado para hogares más amplios. Considera dormitorios, baños, cocina, living, comedor, pasillos, pisos y superficies visibles.",
-      price: "Desde $55.000",
-    },
-    {
-      icon: <FaBroom size={28} />,
+      icon: <GiVacuumCleaner size={34} />,
       title: "Limpieza Profunda",
       description:
-        "Limpieza más detallada para espacios que requieren mayor dedicación. Incluye rincones, superficies, muebles, pisos, baños y cocina.",
-      price: "Desde $65.000",
+        "Servicios periódicos para mantener tu propiedad en perfectas condiciones a largo plazo.",
     },
     {
-      icon: <FaBuilding size={28} />,
-      title: "Limpieza de Oficinas",
+      icon: <FaRegBuilding size={34} />,
+      title: "Limpieza a Empresas",
       description:
-        "Servicio de limpieza para espacios de trabajo, escritorios, baños, pisos, salas de reunión y zonas comunes. El valor depende del tamaño del lugar.",
-      price: "Desde $45.000",
+        "Servicios especializados de limpieza para oficinas y espacios comerciales con horarios flexibles.",
     },
     {
-      icon: <FaBroom size={28} />,
-      title: "Limpieza Personalizada",
+      icon: <FaClipboardCheck size={34} />,
+      title: "Limpieza Post-Venta",
       description:
-        "Servicio adaptado a tus necesidades. Puedes solicitar limpieza por áreas específicas, por horas o según el estado del espacio.",
-      price: "Desde $25.000",
+        "Limpieza después de obras, remodelaciones o mudanzas para dejar tu espacio listo para usar.",
+    },
+    {
+      icon: <FaSprayCan size={34} />,
+      title: "Limpieza de Espacios Exteriores",
+      description:
+        "Limpieza y mantenimiento de jardines, terrazas, patios y otras áreas exteriores de tu propiedad.",
     },
   ];
 
@@ -51,16 +50,15 @@ export const Services = () => {
     <section id="servicios" className="services-section">
       <div className="services-container">
         <div className="services-header">
-          <span className="services-subtitle">Limpieza profesional</span>
+          <span className="services-subtitle">Servicios completos</span>
 
           <h2>
-            Nuestros <span>Servicios</span>
+            Servicios Completos para una <span>limpieza impecable</span>
           </h2>
 
           <p>
-            Ofrecemos servicios de limpieza para casas, departamentos, oficinas
-            y espacios comerciales, con atención responsable, puntual y adaptada
-            a las necesidades de cada cliente.
+            Soluciones de limpieza pensadas para hogares, propiedades,
+            empresas, espacios exteriores y servicios especiales.
           </p>
         </div>
 
@@ -68,8 +66,6 @@ export const Services = () => {
           {services.map((service) => (
             <div className="service-card" key={service.title}>
               <div className="service-icon">{service.icon}</div>
-
-              <span className="service-price">{service.price}</span>
 
               <h3>{service.title}</h3>
 

@@ -4,7 +4,7 @@ const BookingCalendar = () => {
   const googleCalendarUrl = "https://calendar.app.google/Dc853eEhE6ijkoWv7";
 
   return (
-    <section id="reserva" className="booking-section">
+    <section id="agendar" className="booking-section">
       <div className="booking-container">
         <div className="booking-header">
           <span className="booking-label">Reserva tu cita</span>
